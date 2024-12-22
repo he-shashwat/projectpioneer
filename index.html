@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is It Your Birthday?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin-top: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Is Your Birthday Today?</h1>
+    <p>Click the button below to answer!</p>
+    <button onclick="checkBirthday(true)">Yes</button>
+    <button onclick="checkBirthday(false)">No</button>
+
+    <script>
+        function checkBirthday(isBirthday) {
+            if (isBirthday) {
+                // Redirect to a special birthday page
+                window.location.href = "birthday.html";
+            } else {
+                // Redirect to another page
+                window.location.href = "notbirthday.html";
+            }
+        }
+    </script>
+
+</body>
+</html>
